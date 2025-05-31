@@ -7,18 +7,18 @@ time_bound = input("Is it time-bound? (yes/no): ")
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a high priority task that requires immediate attention today!")
+            print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
         else:
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a high priority task. Try to get it done as soon as possible.")
+            print(f"Reminder: '{task}' is a high priority task.")
     case "medium":
         if time_bound == "yes":
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a medium priority task that should be completed today.")
+            print(f"Reminder: '{task}' is a medium priority task that requires immediate attention today!")
         else:
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a medium priority task. Plan it into your schedule.")
+            print(f"Reminder: '{task}' is a medium priority task.")
     case "low":
         if time_bound == "yes":
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a low priority task, but it still requires completion today.")
+            print(f"Reminder: '{task}' is a low priority task that requires immediate attention today!")
         else:
-            print(f"\n{priority.capitalize()}Reminder: '{task}' is a low priority task. Consider completing it when you have free time.")
+            print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
     case _:
-        print("\nInvalid priority input. Please enter high, medium, or low.")
+        print("Invalid priority input. Please enter high, medium, or low.")
