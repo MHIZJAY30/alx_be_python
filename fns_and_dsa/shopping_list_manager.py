@@ -1,10 +1,11 @@
+# Function to display the menu options
 def display_menu():
     print("\n=== Shopping List Manager ===")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
-
+# Main function to run the shopping list manager
 def main():
     shopping_list = []
     while True:
@@ -13,12 +14,14 @@ def main():
 
         if choice == '1':
             item = input("Enter the item to add: ")
+
             shopping_list.append(item)
             print(f"'{item}' has been added to your shopping list.")
 
         elif choice == '2':
             item = input("Enter the item to remove: ")
             if item in shopping_list:
+                
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from your shopping list.")
             else:
@@ -38,6 +41,6 @@ def main():
 
         else:
             print("Invalid choice. Please try again.")
-
+# Entry point
 if __name__ == "__main__":
     main()
