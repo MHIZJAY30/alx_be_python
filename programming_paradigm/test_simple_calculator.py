@@ -21,19 +21,19 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
     # Test multiplication
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(4, 3), 12)
         self.assertEqual(self.calc.multiply(-2, 6), -12)
         self.assertEqual(self.calc.multiply(0, 10), 0)
 
     # Test division
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(9, 3), 3)
         self.assertEqual(self.calc.divide(-12, 3), -4)
 
     # Test division by zero
-    def test_divide_by_zero(self):
+    def test_division_by_zero(self):
         self.assertIsNone(self.calc.divide(5, 0))
         self.assertIsNone(self.calc.divide(0, 0))
 
